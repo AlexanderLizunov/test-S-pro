@@ -1,0 +1,139 @@
+.main-section {
+  padding: 276px 0 100px;
+  background-image: url("../img/images/itecs-main-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  @include tablets {
+    padding-top: 130px;
+    padding-bottom: 80px;
+  }
+}
+
+.main-container {
+  text-align: center;
+}
+
+.main-title-small {
+  color: #333333;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include phones_L {
+    font-size: 38px
+  }
+}
+
+.title-doted {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 194px;
+    height: 185px;
+    background: url(../img/images/itecs-dots.png);
+    opacity: .5;
+    background-size: 100% 100%;
+    @include phones_L {
+      width: 97px;
+      height: 93px;
+    }
+  }
+}
+
+.main-title {
+  margin: 16px 0 0;
+  color: #0085b6;
+  font-size: 72px;
+  text-transform: uppercase;
+  span {
+    color: white;
+  }
+  @include phones_L {
+    font-size: 50px;
+  }
+  @include phones_M {
+    font-size: 44px;
+  }
+  @include phones_S {
+    margin-top: 8px;
+    font-size: 42px;
+  }
+}
+
+.main-title-small_second {
+  text-transform: none;
+}
+
+.main-comment {
+  margin-top: 32px;
+  color: #333333;
+  font-size: 36px;
+  font-weight: 300;
+  @include phones_L {
+    font-size: 28px;
+  }
+  @include phones_M {
+    font-size: 24px;
+  }
+}
+
+.main-button-cover {
+  margin: 42px auto;
+  padding: 5px;
+  height: 84px;
+  width: 80%;
+  max-width: 628px;
+  border-radius: 100px;
+  background-color: #00acec;
+  z-index: 1;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 5px);
+    height: 91px;
+    background: url(../img/images/button-shadow.png);
+    background-repeat: no-repeat;
+    opacity: .65;
+    background-size: 100% 100%;
+  }
+  @include phones_L {
+    width: 100%;
+  }
+}
+
+.main-button {
+  padding-top: 20px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 100px;
+  line-height: normal;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  background-image: linear-gradient(to top, #0095cc 0%, #00acec 100%);
+  position: relative;
+  transition: .6s;
+  &:hover {
+    background-image: linear-gradient(to top, #00acec 0%, #0095cc 100%);
+  }
+  @include phones_L {
+    font-size: 21px;
+  }
+  @include phones_M {
+    font-size: 23px;
+    padding: 8px 10px 0;
+  }
+}
+

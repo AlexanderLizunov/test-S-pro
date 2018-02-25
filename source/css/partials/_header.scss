@@ -1,0 +1,158 @@
+header {
+  padding: 12px 0 10px;
+  background: url("../img/images/header-bg.jpg") no-repeat;
+  background-size: 120% 100%;
+  background-position: 25% top;
+  @include screenTo1930 {
+    background-size: 100% 100%;
+  }
+  @include phones_L {
+    background-size: 136% 100%;
+  }
+  @include phones_L {
+    background-size: 140% 100%;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  @include phones_S {
+    width: 96%;
+  }
+}
+
+.logo-block {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  @include laptop_1280 {
+    width: 36%;
+  }
+  @include laptop_1024 {
+    width: 40%;
+  }
+  @include tablets {
+    width: 36%;
+  }
+  @include phones_landscape {
+    width: 38%;
+  }
+  @include phones_L {
+    width: 44%;
+  }
+}
+
+.header-logo-img {
+  height: 65px;
+  width: auto;
+  @include tablets {
+    height: 40px;
+  }
+  @include phones_S {
+    height: 36px;
+  }
+}
+
+.header-logo-text {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  align-self: center;
+  &:after {
+    height: 0.0625em;
+    width: 100%;
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -8px;
+    background-color: #cdcdcd;
+  }
+  @include tablets {
+    font-size: 18px;
+  }
+  @include phones_landscape {
+    font-size: 16px;
+  }
+  @include phones_L {
+    width: 40%;
+    margin-top: -5px;
+  }
+  @include phones_S {
+    margin-top: 0;
+  }
+}
+
+.contacts-block {
+  display: flex;
+  @include phones_landscape {
+    width: 50%;
+  }
+  @include phones_L {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+  @include phones_M {
+    width: 54%;
+  }
+}
+
+.contacts-address {
+  margin-right: 32px;
+  align-self: center;
+  color: #ffffff;
+  font-size: 15px;
+  @include tablets {
+    font-size: 17px;
+    margin-right: 18px;
+  }
+  @include phones_landscape {
+    margin-right: 0;
+    width: 41%;
+  }
+  @include phones_L {
+    width: 100%;
+    text-align: right;
+  }
+  @include phones_S {
+    display: none;
+  }
+}
+
+.contacts-phone {
+  display: flex;
+  @include phones_landscape {
+    width: 59%;
+  }
+  @include phones_L {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.contacts-img-cover {
+  margin-right: 12px;
+}
+
+.contacts-img {
+  @include tablets {
+    height: 50px;
+  }
+  @include phones_landscape {
+    height: 36px;
+  }
+}
+
+.contacts-phone-link {
+  margin-top: -8px;
+  align-self: center;
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  @include tablets {
+    margin-top: -3px;
+    font-size: 20px;
+  }
+}

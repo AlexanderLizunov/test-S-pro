@@ -1,0 +1,216 @@
+.details-section {
+  padding: 100px 0 0;
+  background-color: #ededed;
+  position: relative;
+  overflow: hidden;
+}
+
+.details-container {
+  max-width: 1170px;
+}
+
+.details-title-cover {
+  display: flex;
+  justify-content: center;
+}
+
+.title-block-left,
+.title-block-right {
+  padding: 22px 0 19px;
+  max-width: 176px;
+  width: 40%;
+  border: 3px solid #00a4f3;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.title-block-left {
+  padding-right: 8px;
+  border-right: none;
+}
+
+.title-block-right {
+  text-align: left;
+  border-color: white;
+  border-left: none;
+}
+
+.direction-image {
+  display: block;
+  margin: 5px auto;
+  width: 68%;
+  height: auto;
+  @include phones_L {
+    width: 79%;
+  }
+}
+
+.direction-cover {
+  display: flex;
+  justify-content: space-between;
+  @include phones_L {
+    flex-wrap: wrap;
+  }
+}
+
+.direction-item {
+  padding: 48px 40px 62px;
+  text-align: center;
+  background-size: 100% 100%;
+  position: relative;
+  width: 31.6%;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 5px);
+    height: 68px;
+    background: url(../img/images/item-shadow.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  &:first-child {
+    background-image: url("../img/images/item-1-bg.jpg");
+  }
+  &:nth-child(2) {
+    background-image: url("../img/images/item-2-bg.jpg");
+  }
+  &:nth-child(3) {
+    background-image: url("../img/images/item-3-bg.jpg");
+  }
+  @include tablets {
+    padding: 40px 20px 50px;
+  }
+  @include phones_L {
+    width: 80%;
+    margin: 30px auto;
+    &:first-child {
+      margin: auto;
+    }
+  }
+}
+
+.direction-item-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.direction-item-text {
+  margin-top: 36px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  @include phones_L {
+    font-size: 20px;
+  }
+  @include phones_S {
+    font-size: 21px;
+  }
+}
+
+.head-block {
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 74px;
+  @include phones_L {
+    margin-top: 220px;
+  }
+}
+
+.head-content-cover {
+  width: 67%;
+  text-align: right;
+  position: relative;
+  z-index: 3;
+  @include phones_L {
+    width: 100%;
+  }
+}
+
+.head-title {
+  padding-right: 14px;
+  color: #333333;
+  font-size: 48px;
+  font-weight: 700;
+  @include phones_L {
+    width: 65%;
+    display: inline-block;
+  }
+}
+
+.head-position {
+  padding-right: 14px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 300;
+  @include phones_L {
+    width: 40%;
+    display: inline-block;
+  }
+}
+
+.head-text {
+  margin-top: 28px;
+  padding: 26px 70px 48px 34px;
+  display: block;
+  width: 100%;
+  background-image: url("../img/images/content-bg.png");
+  background-size: 100% 100%;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: left;
+  @include tablets {
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+  }
+  @include phones_landscape {
+    padding-left: 35px;
+  }
+  @include phones_L {
+    font-size: 20px;
+  }
+  @include phones_S {
+    font-size: 21px;
+  }
+}
+
+.details-top-bg,
+.details-bg-bottom {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 93.75%;
+  max-width: 1492px;
+}
+
+.details-bg-bottom {
+  height: 365px;
+  width: auto;
+  position: absolute;
+  left: auto;
+  top: auto;
+  bottom: 0;
+  right: -107px;
+  transform: none;
+  @include tablets {
+    right: -170px;
+  }
+  @include phones_L {
+    right: 100px;
+    top: -176px;
+  }
+  @include phones_S {
+    right: 36px;
+  }
+}
